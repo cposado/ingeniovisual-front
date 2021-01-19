@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #00b5ec;
+  --color-secondary: #E54B25;
+  --swiper-pagination-color: #000;
+  --swiper-navigation-color: #CCC;
+  --swiper-theme-color: #000;
+  --swiper-navigation-size: 22px;
+}
+
+@tailwind base;
+
+body {
+  @apply antialiased;
+  font-family: Lobster;
+  scroll-behavior: smooth;
+  background-color: #F5F5F5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-6xl;
+    @apply font-sans;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-serif;
+  }
+}

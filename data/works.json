@@ -1,0 +1,129 @@
+[
+  {
+    "name": "Grupo Colon Gerena",
+    "desc": "NuxtJS",
+    "link": "https://www.grupocolongerena.com/",
+    "img": "images/gcg-2.jpg"
+  },
+  {
+    "name": "Loreal Proffesional - Redken",
+    "desc": "NuxtJS",
+    "link": "https://www.lorealprofesionalpr.com/redken/",
+    "img": "images/redken.jpg"
+  },
+  {
+    "name": "Medalla Light",
+    "desc": "NuxtJS",
+    "link": "https://www.medallalight.com/",
+    "img": "images/medalla.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Schneider Electric Desktop App",
+    "desc": "Electron, React, Redux",
+    "link": "https://vimeo.com/236982096",
+    "img": "images/se-app.jpg"
+  },
+  {
+    "name": "Indigo Interactive Media Display",
+    "link": "https://vimeo.com/176788982",
+    "img": "images/indigo.jpg"
+  },
+  {
+    "id": 2,
+    "name": "NatGeo Expeditions 2018",
+    "desc": "Vue, Vuex, PWA, PHP Cockpit CMS",
+    "link": "http://www.natgeoexpeditionsla.dreamhosters.com/",
+    "img": "images/ng-expeditions.jpg"
+  },
+  {
+    "name": "Gritalo con Emoción",
+    "link": "http://gritaloconemocion.overprint.com.ar/",
+    "img": "images/gritaloconemocion.jpg"
+  },
+  {
+    "name": "Unopack",
+    "link": "http://www.unopack.com.ar/",
+    "img": "images/unopack.jpg"
+  },
+  {
+    "name": "Pampers - Gracias Mami",
+    "link": "http://www.graciasmamipr.com",
+    "img": "images/gracias-mami.jpg"
+  },
+  {
+    "name": "Nissan Escuela de Emociones",
+    "link": "http://foxnissan.overprint.com.ar/",
+    "img": "images/escuela-de-emocion.jpg"
+  },
+  {
+    "name": "P&G Ace - Juntos Brillamos Más",
+    "link": "http://portfolio.overprint.com.ar/juntosbrillamosmas/",
+    "img": "images/juntos-brillamos-mas.jpg"
+  },
+  {
+    "name": "Mensajes que Valen",
+    "link": "http://www.mensajesquevalen.com/",
+    "img": "images/mensajes-que-valen.jpg"
+  },
+  {
+    "name": "Angelito Antiques",
+    "link": "http://angelitoantiques.com.ar/",
+    "img": "images/angelitoantiques.jpg"
+  },
+  {
+    "name": "Mira como bailo",
+    "link": "https://www.miracomobailo.com/",
+    "img": "images/mira-como-bailo.jpg"
+  },
+  {
+    "name": "App Personal Musica",
+    "link": "https://vimeo.com/65763174",
+    "img": "images/app-personal-music.jpg"
+  },
+  {
+    "name": "Foxchannels",
+    "link": "",
+    "img": "images/foxchannels.jpg"
+  },
+  {
+    "name": "Samsung Smart Choices",
+    "link": "http://portfolio.overprint.com.ar/samsung_smartchoices/",
+    "img": "images/samsung-smart-choices.jpg"
+  },
+  {
+    "name": "Fox - Serie Mental",
+    "link": "http://portfolio.overprint.com.ar/mental/",
+    "img": "images/fox-mental.jpg"
+  },
+  {
+    "name": "Rums of Puerto Rico",
+    "link": "http://portfolio.overprint.com.ar/ROPR/",
+    "img": "images/ropr.jpg"
+  },
+  {
+    "name": "Natgeo lo mejor 2011",
+    "link": "",
+    "img": "images/natgeo-lo-mejor-2011.jpg"
+  },
+  {
+    "name": "Copa Airlines - La milla extra",
+    "link": "http://portfolio.overprint.com.ar/lamillaextra",
+    "img": "images/copa-la-milla-extra.jpg"
+  },
+  {
+    "name": "Copa Airlines - Boleto Dorado",
+    "link": "http://portfolio.overprint.com.ar/boletodorado/",
+    "img": "images/copa-boleto-dorado.jpg"
+  },
+  {
+    "name": "Toyota mitos hibridos",
+    "link": "",
+    "img": "images/toyota-mitos-hibridos.jpg"
+  },
+  {
+    "name": "Fox - 24",
+    "link": "",
+    "img": "images/24.jpg"
+  }
+]

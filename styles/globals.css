@@ -11,7 +11,7 @@
 
 body {
   @apply antialiased;
-  font-family: Lobster;
+  /* font-family: Lobster; */
   scroll-behavior: smooth;
   background-color: #F5F5F5;
 }
@@ -30,6 +30,6 @@ html {
   }
   h2 {
     @apply text-2xl;
-    @apply font-serif;
+    @apply font-sans;
   }
 }

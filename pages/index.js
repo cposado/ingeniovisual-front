@@ -1,15 +1,18 @@
 import Head from 'next/head'
 import Work from 'components/work/Work'
+import axios from 'axios'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, fa } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-import DataWorks from 'data/works.json'
+// import DataWorks from 'data/works.json'
 // import styles from '../styles/Home.module.css'
 
-export default function Home() {
-  const data = DataWorks;
+const Home = ({ works, error }) => {
+  if (error) {
+    return <div>An error occured: {error.message}</div>;
+  }
   return (
     <section>
       <Head>
@@ -30,7 +33,7 @@ export default function Home() {
           <a className="p-1" href="https://github.com/cposado" target="blank" rel="noopener">
             <FontAwesomeIcon icon={faGithub} className="icon-bars" size="lg"/>
           </a>
-          <a className="p-1" href="https://www.linkedin.com/public-profile/in/claudio-posado-00491b4/" target="blank" rel="noopener">
+          <a className="p-1" href="www.linkedin.com/in/claudio-posado" target="blank" rel="noopener">
             <FontAwesomeIcon icon={faLinkedin} className="icon-bars" size="lg"/>
           </a>
 
@@ -42,10 +45,23 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-0">
-        { data && data.map(work => (
+        { works && works.map(work => (
           <Work data={ work } key={work.name}/>
         )) }
       </div>
     </section>
   )
 }
+
+
+Home.getInitialProps = async ctx => {
+  try {
+    const res = await axios.get('http://localhost:1337/works');
+    const works = res.data;
+    return { works };
+  } catch (error) {
+    return { error };
+  }
+};
+
+export default Home

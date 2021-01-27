@@ -16,7 +16,7 @@ const Work = ({ data }) => (
     <a href={data.link}>
       <p>{data.name}</p>
     </a>
-    <img src={data.img} alt={data.name} />
+    <img src={data.thumb && data.thumb.url} alt={data.name} />
   </WorkContainer>
 )
 

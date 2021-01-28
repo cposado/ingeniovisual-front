@@ -6,10 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, fa } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-const Home = ({ works, error }) => {
-  if (error) {
-    return <div>An error occured: {error.message}</div>;
-  }
+const Home = ({ works }) => {
+  // if (error) {
+  //   return <div>An error occured: {error.message}</div>;
+  // }
   return (
     <section>
       <Head>
@@ -62,13 +62,9 @@ const Home = ({ works, error }) => {
 // };
 
 export async function getStaticProps() {
-  try {
-    const { data } = await axios.get(`${process.env.API_URL}/works`);
-    const works = data;
-    return { props: { works } }
-  } catch (error) {
-    return { props: { error } }
-  }
+  const { data } = await axios.get(`${process.env.API_URL}/works`);
+  const works = data;
+  return { props: { works } }
 }
 
 export default Home

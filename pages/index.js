@@ -30,7 +30,7 @@ const Home = ({ works }) => {
           <a className="p-1" href="https://github.com/cposado" target="blank" rel="noopener">
             <FontAwesomeIcon icon={faGithub} className="icon-bars" size="lg"/>
           </a>
-          <a className="p-1" href="www.linkedin.com/in/claudio-posado" target="blank" rel="noopener">
+          <a className="p-1" href="https://www.linkedin.com/in/claudio-posado" target="blank" rel="noopener">
             <FontAwesomeIcon icon={faLinkedin} className="icon-bars" size="lg"/>
           </a>
 

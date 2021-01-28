@@ -6,9 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, fa } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-// import DataWorks from 'data/works.json'
-// import styles from '../styles/Home.module.css'
-
 const Home = ({ works, error }) => {
   if (error) {
     return <div>An error occured: {error.message}</div>;
@@ -40,8 +37,8 @@ const Home = ({ works, error }) => {
           <a className="p-1" href="mailto:claudioposado@gmail.com" target="blank" rel="noopener">
             <FontAwesomeIcon icon={faEnvelope} className="icon-bars" size="lg"/>
           </a>
-
         </div>
+
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-0">
@@ -54,14 +51,24 @@ const Home = ({ works, error }) => {
 }
 
 
-Home.getInitialProps = async ctx => {
+// Home.getInitialProps = async ctx => {
+//   try {
+//     const res = await axios.get(`${process.env.API_URL}/works`);
+//     const works = res.data;
+//     return { works };
+//   } catch (error) {
+//     return { error };
+//   }
+// };
+
+export async function getStaticProps() {
   try {
-    const res = await axios.get('http://localhost:1337/works');
-    const works = res.data;
-    return { works };
+    const { data } = await axios.get(`${process.env.API_URL}/works`);
+    const works = data;
+    return { props: { works } }
   } catch (error) {
-    return { error };
+    return { props: { error } }
   }
-};
+}
 
 export default Home

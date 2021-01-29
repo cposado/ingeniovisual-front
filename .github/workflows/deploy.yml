@@ -9,6 +9,9 @@ on:
   
   workflow_dispatch:
 
+  repository_dispatch:
+    types: [ updateData ]
+
 jobs:
   build:
 
@@ -32,4 +35,4 @@ jobs:
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASS }}
         local-dir: ./out/
-        server-dir: htdocs/next/
+        server-dir: next/

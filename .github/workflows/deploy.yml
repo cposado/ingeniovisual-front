@@ -14,26 +14,22 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js $
+    - name: Use Node.js 12
       uses: actions/setup-node@v1
       with:
-        node-version: $
+        node-version: 12
     - run: npm install -g yarn
     - run: yarn install --frozen-lockfile
     - run: yarn build
       env:
         CI: true
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USER }}
-        ftp-password: ${{ secrets.FTP_PASS }}
-        local-dir: dist
-        git-ftp-args: --insecure
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASS }}
+        local-dir: ./out/
+        server-dir: htdocs/next/
